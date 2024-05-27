@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular18-ngrx-zoneless';
+
+  homeName:string = '';
+  appVariable: string = '';
+
+
+  sendActionToHome() {
+    // Simulate an action that might trigger change detection
+    this.homeName = 'Updated by AppComponent';
+  }
+
+  actionInApp(){
+  this.appVariable = 'action in app';
+  }
 }
